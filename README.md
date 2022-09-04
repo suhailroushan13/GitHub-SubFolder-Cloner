@@ -29,7 +29,7 @@ See also the list of contributors who participated in this project.
 - References
 
 <h2 align="left"> 🟢 Visitor Count ++</h2>
-  -  <a href="https://github.com/suhailroushan13/GitHub-SubFolder-Cloner" title="GitHub-SubFolder-Cloner"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=mgw6alajrqyn1xntafr314bfn38ru3t8" border="0" title="free hit counter" alt="free hit counter"></a>
+ <img src="https://profile-counter.glitch.me/GitHub-SubFolder-Cloner/count.svg" />
 
 
 
