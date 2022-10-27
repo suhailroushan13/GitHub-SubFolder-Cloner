@@ -10,18 +10,40 @@ GitHub-SubFolder-Cloner is a simple bash script that allows you to clone subfold
 ### Prerequisites
 You need to have <b>Ubuntu and GitHub </b> installed on your system.
 ### Installing
+<b>Step 1:</b>
 ```
-git clone git@github.com:suhailroushan13/GitHub-SubFolder-Cloner.git
-cd GitHub-SubFolder-Cloner
+git clone --depth=1 git@github.com:suhailroushan13/GitHub-SubFolder-Cloner.git ~/GitHub-SubFolder-Cloner
+cd ~/GitHub-SubFolder-Cloner
 chmod +x script.sh
 bash script.sh
 ```
-## 🎈 Usage <a name="usage"></a>
+<b>Step 2:</b>
+
+<b>zsh (macOS **10.15**+)</b>
 ```
-bash script.sh
+echo 'alias git-sub="bash ~/GitHub-SubFolder-Cloner/script.sh"' >> ~/.zshrc
+source ~/.zshrc
+```
+<b> bash (Windows/Linux)</b>
+```
+echo 'alias git-sub="bash ~/GitHub-SubFolder-Cloner/script.sh"' >> ~/.bashrc
+source ~/.bashrc
+```
+<b>To know which shell</b>
+```
+echo $SHELL
+```
+
+
+
+## 🎈 Usage <a name="usage"></a>
+<b>Type the below command from anywhere to run the script.</b>
+```
+git-sub
 ```
 ## ✍️ Authors <a name = "authors"></a>
 - [@suhailroushan13](https://github.com/suhailroushan13) - Idea & Initial work
+- [@Abdul535](https://github.com/Abdul535) - Added Custom Folder Name Functionality
 See also the list of contributors who participated in this project.
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 - Hat tip to anyone whose code was used
@@ -30,7 +52,5 @@ See also the list of contributors who participated in this project.
 
 <h2 align="left"> 🟢 Visitor Count ++</h2>
  <img src="https://profile-counter.glitch.me/GitHub-SubFolder-Cloner/count.svg" />
-
-
 
 

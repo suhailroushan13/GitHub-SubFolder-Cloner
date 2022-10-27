@@ -7,20 +7,27 @@ CYAN="\e[36m"
 RESET="\e[0m"
 ENDCOLOR="\e[0m"
 bold=$(tput bold)
-folderName="Git-SubFolder-Cloner"
+pwd=$(pwd)
 branch=""
 master="master"
 main="main"
 echo -e "${YELLOW}************************************"
 echo -e "${GREEN}${bold}Welcome to GitHub SubFolder Cloner"
-echo -e "By @suhailroushan13 "
+echo -e "By @suhailroushan13 @Abdul535"
 echo -e "${YELLOW}************************************${ENDCOLOR}"
+
 read -p "${bold}Enter the GitHub Repository URL: " url
 echo -e "${CYAN}${bold}GitHub URL is: $url\n${ENDCOLOR}"
+
 read -p "${bold}Enter the SubFolder Name From Repository: " folder
 echo -e "${MAGENTA}${bold}Cloning Folder Name is: $folder\n${ENDCOLOR}"
+
 read -p "${bold}Enter the Branch Name of the Repo Example (master/main) : " branch
 echo -e "${YELLOW}${bold}Branch Name is: $branch\n${ENDCOLOR}\n"
+
+read -p "${bold}Enter the Folder Name to save in Local : " folderName
+echo -e "${YELLOW}${bold}folder Name is: $folderName\n${ENDCOLOR}\n"
+
 mkdir $folderName
 cd $folderName
 git init 
@@ -29,3 +36,4 @@ git config core.sparseCheckout true
 git sparse-checkout set $folder
 git pull origin $branch
 echo -e "${GREEN}${bold}Cloning the SubFolder from GitHub is Completed inside The Folder\n: $folderName${ENDCOLOR}"
+echo -e "${GREEN}${bold}Full Path \n: $pwd/$folderName${ENDCOLOR}"
