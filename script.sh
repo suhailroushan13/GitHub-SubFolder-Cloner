@@ -16,17 +16,17 @@ echo -e "${GREEN}${bold}Welcome to GitHub SubFolder Cloner"
 echo -e "By @suhailroushan13 @Abdul535"
 echo -e "${YELLOW}************************************${ENDCOLOR}"
 
-read -p "${bold}Enter the GitHub Repository URL: " url
+read -p "${bold}Enter the GitHub Repository SSH URL: " url
 echo -e "${CYAN}${bold}GitHub URL is: $url\n${ENDCOLOR}"
 
-read -p "${bold}Enter the SubFolder Name From Repository: " folder
+read -p "${bold}Enter the SubFolder Name From The Repository: " folder
 echo -e "${MAGENTA}${bold}Cloning Folder Name is: $folder\n${ENDCOLOR}"
 
 read -p "${bold}Enter the Branch Name of the Repo Example (master/main) : " branch
 echo -e "${YELLOW}${bold}Branch Name is: $branch\n${ENDCOLOR}\n"
 
-read -p "${bold}Enter the Folder Name to save in Local : " folderName
-echo -e "${YELLOW}${bold}folder Name is: $folderName\n${ENDCOLOR}\n"
+read -p "${bold}Enter the Folder Name Which You Want to Save In Local : " folderName
+echo -e "${YELLOW}${bold}Your Folder Name is: $folderName\n${ENDCOLOR}\n"
 
 mkdir $folderName
 cd $folderName
