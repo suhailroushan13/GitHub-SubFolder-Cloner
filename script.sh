@@ -25,7 +25,7 @@ echo -e "${MAGENTA}${bold}Cloning Folder Name is: $folder\n${ENDCOLOR}"
 read -p "${bold}Enter the Branch Name of the Repo Example (master/main) : " branch
 echo -e "${YELLOW}${bold}Branch Name is: $branch\n${ENDCOLOR}\n"
 
-read -p "${bold}Enter the Folder Name Which You Want to Save In Local : " folderName
+read -p "${bold}Enter the Folder Name Which You Want to Save In Local (Your-Folder-Name)/${folder} : " folderName
 echo -e "${YELLOW}${bold}Your Folder Name is: $folderName\n${ENDCOLOR}\n"
 
 mkdir $folderName
@@ -35,5 +35,5 @@ git remote add -f origin $url
 git config core.sparseCheckout true
 git sparse-checkout set $folder
 git pull origin $branch
-echo -e "${GREEN}${bold}Cloning the SubFolder from GitHub is Completed inside The Folder\n: $folderName${ENDCOLOR}"
-echo -e "${GREEN}${bold}Full Path \n: $pwd/$folderName${ENDCOLOR}"
+echo -e "${GREEN}${bold}Cloning the SubFolder from GitHub is Completed\nInside The Folder Name \n: $folderName${ENDCOLOR}"
+echo -e "${GREEN}${bold}Full Path of That Folder \n: $pwd/$folderName${ENDCOLOR}"
